@@ -61,24 +61,22 @@ body {
 .inline_block_model {
     display: inline-block;
 }
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
+.cards {
+    font-size: 0;
+}
+.card {
     display: inline-block;
     width: 420px;
     height: 490px;
     margin-bottom: 120px;
 }
-.card2,
-.card4,
-.card6 {
-    margin-left: 56px;
+.card-2,
+.card-4,
+.card-6 {
+    margin-left: 60px;
 }
-.card5,
-.card6 {
+.card-5,
+.card-6 {
     margin-bottom: 55px;
 }
 .card__title {
