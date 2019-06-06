@@ -134,6 +134,7 @@ ul {
 .item__image {
     width: 255px; 
     height: 282px;
+    display: block;
 }
 .item_title {
     width: 200px;
