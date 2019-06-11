@@ -37,7 +37,6 @@ h2 {
 }
 .menu {
     float: right;
-    width: 465px;
     margin: 0;
     margin-top: 42px;
     padding: 0;
@@ -90,25 +89,49 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
     border: none;
+    outline: none;
+    transition: opacity .4s ease;
     display: inline-block;
-    width: 105px;
-    height: 105px;
-    background-color: #55a18f;
-
-    background-size: 24px 38px;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 104px;
+    height: 104px;
+    background-color: #1abc9c;
+    opacity: 0.65;
     cursor: pointer;
-    z-index: 2;
+    z-index: 2;   
+}
+.slider-ctrl:hover,
+.slider-ctrl:focus {
+    background-color: #4ec6ab;
+    opacity: 1;
+    cursor: pointer;
+}
+.slider-ctrl-prev::before,
+.slider-ctrl-next::before {
+    content: "";
+    --s: 28px;
+    --bd: 4px solid #fff;
+    width: var(--s);
+    height: var(--s);
+    border-left:  var(--bd);
+    border-top:  var(--bd);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.slider-ctrl-next::before {
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+.slider-ctrl-prev::before {
+    left: 55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 .slider-ctrl-prev {
-    left: 0;
-    background-image: url(../img/icons/pointer-left-icon.png);   
+    left: 0;   
 }
 .slider-ctrl-next {
     right: 0;
-    background-image: url(../img/icons/pointer-right-icon.png);
-}
+} 
 .slides {
     margin: 0;
     padding: 0;
@@ -132,15 +155,13 @@ h2 {
 .slide-header {
     top: 220px;
     font-size: 60px;
-    font-weight: bold;
-       
+    font-weight: bold;      
 }
 .slide-descrp {
     top: 290px;
     font-size: 24px;
     font-weight: 100;    
 }
-
 .slider-opacity {
     background-color: rgb(0, 0, 2);
     opacity: 0.522;
@@ -148,8 +169,7 @@ h2 {
     width: 100%;
     height: 600px;
     z-index: 1;
-}
-  
+} 
 .page_header {
     color: #515151;
     margin-top: 100px;
@@ -167,6 +187,8 @@ h2 {
     margin-top: 30px;
     margin-bottom: 93px;
 }
+
+/* item list  */
 ul {
     display: block;
     list-style-type: disc;
@@ -203,8 +225,7 @@ ul {
 }
 .list_items:hover .overlay {
     border: solid 10px rgba(255,255,255, 0.8);
-    background-color: rgba(0, 0, 0, 0.549);
-    
+    background-color: rgba(0, 0, 0, 0.549);    
 } 
 .like-icon {
     background: url(../img/icons/like-icon.png);    
@@ -271,7 +292,6 @@ ul {
 .buy-later-icon {
     margin-right: 0;
 }
-
 .list_items:hover .item_title {
     background: #1abc9c;
 }
