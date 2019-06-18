@@ -1,0 +1,320 @@
+html {
+    box-sizing: border-box;
+} 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.page-header {
+    height: 50px;    
+} 
+.page-nav {
+   display: flex; 
+   justify-content: space-between;
+   align-items: flex-end;
+   height: 50px; 
+}
+.site-navigation {
+    display: flex; 
+    justify-content: space-between;
+    width: 490px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link { 
+    color: #95e1d3;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transition: color 200ms linear;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: #f38181;
+    padding-bottom: 11px;
+    border-bottom: solid 3px #f38181;
+}
+
+/* SERVICES SECTION */
+
+.services {
+    padding-top: 130px;
+}
+.services-pre-title,
+.team-pre-title {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+.services-title,
+.team-title {
+    font-size: 30px;
+    font-family: 'Montserrat' bold;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+.services-title::after,
+.team-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: solid 3px #f38181;
+    padding-top: 44px;
+    margin: 0 auto;
+}
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+.services-list-item { 
+    position: relative;
+    width: 383px;
+    padding-left: 83px;
+}
+.services-item-name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
+}
+.services-item-descrp {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: left;
+}
+.services-list-item::before {
+    position: absolute;
+    left: 20px;
+    top: 0; 
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/icons/ALARM.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-2::before {
+    background-image: url(../img/icons/LINE\ GRAPH.png);
+}
+.icon-3::before {
+    background-image: url(../img/icons/COMPUTER\ _\ OK.png);
+}
+.icon-4::before {
+    background-image: url(../img/icons/BOOK\ 2.png);
+}
+.icon-5::before {
+    background-image: url(../img/icons/HOME.png);
+}
+.icon-6::before {
+    background-image: url(../img/icons/IMAGE.png);
+}
+
+/* TEAM */
+.team {
+    padding-top: 95px;
+    padding-bottom: 155px;
+    border-bottom: solid 1px rgb(229, 229, 229);
+}  
+.team-descrp {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: center;
+    padding-bottom: 95px;
+}
+.team-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.team-list-item {
+    position: relative;
+    width: 380px;
+    height: 470px; 
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
+    z-index: -1;
+}
+.overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;         
+}
+.team-list-item:hover .overlay {
+    background-image: linear-gradient(rgba(238, 137, 137, .9), rgba(239, 216, 136, .9));
+}
+.team-list-item:hover .icon {
+    opacity: 1;   
+}
+.team-list-item:hover .transform {
+    transform: translate(-10px, -10px);
+}
+.transform {
+    transition: transform 200ms linear;
+    height: 100%;
+    width: 100%;
+}
+.icon {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    border-right: solid 1px rgba(247, 128, 99, 0.6);
+    opacity: 0;
+    
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 200ms linear;
+}
+.team-list-item:hover .icon {
+    opacity: 1;
+}
+.icon:hover {
+    background-color: #95e1d3;
+}
+.facebook {
+    background-image: url(../img/icons/facebook.png);
+}
+.twitter {
+    background-image: url(../img/icons/twitter.png);
+}
+.pinterest {
+    background-image: url(../img/icons/pinterest.png);
+}
+.instagram {
+    background-image: url(../img/icons/instagram.png);
+    border-right: none;
+}
+.team-list-image {
+    width: 380px;
+    height: 470px; 
+}
+.team-list-name {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
+.team-list-occupation {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* FOOTER */
+
+.page-footer {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-info {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+.footer-info span {
+    color: #f38181;
+    cursor: pointer;
+}
+.input {
+    display: flex;
+}
+.your-email {
+    width: 230px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+    border: solid 1px rgb(229, 229, 229);
+    outline: none;
+}
+::placeholder{  
+    color: rgb(204, 204, 204); 
+} 
+:-ms-input-placeholder {
+    color: rgb(204, 204, 204);
+}
+::-ms-input-placeholder {
+    color: rgb(204, 204, 204); 
+}
+.subscribe-btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #95e1d3;
+    padding-left: 33px;
+    padding-right: 33px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+  
