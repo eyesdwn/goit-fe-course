@@ -251,5 +251,6 @@ ul {
     border: none;
     border-radius: 5px;
     margin-bottom: 115px;
+    cursor: pointer;
 }
   
