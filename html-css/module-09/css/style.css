@@ -1,0 +1,174 @@
+.wrapper-top {
+    position: relative;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .wrapper-top::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .header,
+  .cover {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cover {
+    padding: 20px 0 135px;
+  }
+  
+  .header-button {
+    color: #fff;
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    line-height: 1;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+  
+  a.header-button,
+  a.logo-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .header-button:hover {
+    border-color: #fff;
+  }
+  
+  .logo {
+    margin-top: 115px;
+  }
+  
+  .title {
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  
+  .subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px 24px;
+    border: 1px solid #ff4e50;
+    background: #ff4e50;
+    color: #fff;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+  
+  .button-outlined {
+    background: transparent;
+    color: #ff4e50;
+  }
+  
+  .team {
+    padding: 70px 0 60px;
+  }
+  .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px; 
+    margin-bottom: 40px;
+  }
+  .partner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 17px;
+    margin-top: 22px;
+  }
+  .partner-descr {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.2;
+  }
+  .partner {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+  .partner:last-child {
+    margin-bottom: 30px;
+  }
+  .img-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .img-wrapper::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border: 4px solid #fff;
+    bottom: 0;
+    border-radius: 50%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+  }
+  .img-wrapper.red::after {
+    background-color: #ff4e50;
+    background-image: url(../img/icons/tv-icon.png);
+  }
+  .img-wrapper.green::after {
+    background-color: #1cd7ad;
+    background-image: url(../img/icons/coffee-icon.png);
+  }
+  .img-wrapper.yellow::after {
+    background-color: #ffa507;
+    background-image: url(../img/icons/chem-icon.png);
+  }
+  
+  .img-wrapper.blue::after {
+    background-color: #4e73db;
+    background-image: url(../img/icons/telegram-icon.png);
+    background-position: center left+5px;
+  }
+  @media (min-width: 768px) {
+    .header {
+      padding: 35px 0;
+    }
+  
+    .cover {
+      padding: 120px 0 235px;
+    }
+  
+    .team {
+      padding: 70px 0 40px;
+    }
+  
+    .button {
+      width: auto;
+    }
+  
+    .logo {
+      margin-top: 0;
+    }
+  }
+  
