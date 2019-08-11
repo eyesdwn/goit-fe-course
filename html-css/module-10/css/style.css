@@ -342,14 +342,14 @@ svg path {
 .icon--color {
     fill: #f38181;
 }
-.icon--hover:hover {
+.icon:hover .icon--hover {
     fill: #fff;
 }
 .team-list__item:hover .icon {
     opacity: 1;
 }
 .icon:hover {
-    background-color: #95e1d3;
+    background-color: #f38181;
 }
 .icon svg {
     display: inline-block;
