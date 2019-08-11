@@ -97,6 +97,9 @@ svg path {
     height: 20px;
     fill: #fff;
 }
+.site-navigation__icon--hover:hover {
+    fill: #fce38a;
+}
 .header__cover{
     padding-top: 165px;
     width: 800px;
@@ -336,6 +339,12 @@ svg path {
     -o-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
 }
+.icon--color {
+    fill: #f38181;
+}
+.icon--hover:hover {
+    fill: #fff;
+}
 .team-list__item:hover .icon {
     opacity: 1;
 }
@@ -347,19 +356,6 @@ svg path {
     width: 25px;
     height: 25px;
 }
-/* .facebook {
-    background-image: url(../img/icons/facebook.png);
-}
-.twitter {
-    background-image: url(../img/icons/twitter.png);
-}
-.pinterest {
-    background-image: url(../img/icons/pinterest.png);
-}
-.instagram {
-    background-image: url(../img/icons/instagram.png);
-    border-right: none;
-} */
 .team-list__image {
     width: 380px;
     height: 470px; 
