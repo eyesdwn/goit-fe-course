@@ -1,0 +1,118 @@
+.team {
+  padding-top: 95px;
+  padding-bottom: 155px;
+  border-bottom: solid 1px rgb(229, 229, 229);
+}
+
+.team__pre-title {
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: $secondary-color;
+  line-height: 1.2;
+}
+
+.team__title {
+  font-size: 30px;
+  font-family: $main-font-stack;
+  color: $secondary-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: solid 3px $icon-color;
+    padding-top: 44px;
+    margin: 0 auto;
+  }
+}
+
+.team__descrp {
+  font-size: 15px;
+  font-family: $secondary-font-stack;
+  color: $description-color;
+  line-height: 1.6;
+  text-align: center;
+  padding-bottom: 95px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  @extend %list;
+}
+
+.team-list__item {
+  position: relative;
+  width: 380px;
+  height: 470px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $secondary-bg-color;
+  width: 380px;
+  height: 470px;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  @include center-flex('all');
+  width: 100%;
+  height: 100%;
+}
+
+.transform {
+  transition: transform 200ms linear;
+  height: 100%;
+  width: 100%;
+}
+
+.team-list__item:hover .overlay {
+  background-image: linear-gradient(rgba(238, 137, 137, 0.9), rgba(239, 216, 136, 0.9));
+}
+
+.team-list__item:hover .icon {
+  opacity: 1;
+}
+
+.team-list__item:hover .transform {
+  transform: translate(-10px, -10px);
+}
+
+.team-list__item :hover .icon {
+  opacity: 1;
+}
+
+.team-list__image {
+  width: 380px;
+  height: 470px;
+}
+
+.team-list__name {
+  font-size: 14px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.team-list__occupation {
+  font-size: 15px;
+  font-family: $secondary-font-stack;
+  color: $description-color;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}

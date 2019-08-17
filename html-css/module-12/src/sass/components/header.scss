@@ -1,0 +1,43 @@
+.header__cover {
+  padding-top: 165px;
+  width: 800px;
+  text-align: center;
+}
+
+.cover__title {
+  margin-top: 40px;
+  color: $main-color;
+  font-family: $main-font-stack;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.cover__subtitle {
+  margin-top: 0;
+  color: $main-color;
+  font-family: "Kaushan Script";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cover__button {
+  padding: 15px 32px;
+  border: 3px solid $main-color;
+  background-color: transparent;
+  color: $main-color;
+  font-family: $main-font-stack;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cover__button--hover:hover {
+  color: $accent-color;
+  border-color: $accent-color;
+  transition: all 0.2s ease-in;
+}

@@ -1,0 +1,32 @@
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+  @extend %list;
+}
+
+.site-navigation__link {
+  text-decoration: none;
+  color: $main-color;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: color 200ms linear;
+
+  &:hover,
+  &focus {
+    color: $accent-color;
+    padding-bottom: 11px;
+    border-bottom: solid 3px $accent-color;
+  }
+}
+
+.site-navigation__icon {
+  width: 20px;
+  height: 20px;
+  fill: $main-color;
+
+  &:hover {
+    fill: $accent-color;
+  }
+}

@@ -1,0 +1,56 @@
+.icon {
+  @include center-flex('all');
+  width: 55px;
+  height: 55px;
+  border-right: solid 1px $icon-color;
+  opacity: 0;
+  background-color: $accent-color;
+  transition: background-color 200ms linear;
+
+  &-2::before {
+    background-image: url(../images/icons/icon-graph.png);
+  }
+
+  &-3::before {
+    background-image: url(../images/icons/icon-computer.png);
+  }
+
+  &-4::before {
+    background-image: url(../images/icons/icon-seo.png);
+  }
+
+  &-5::before {
+    background-image: url(../images/icons/icon-house.png);
+  }
+
+  &-6::before {
+    background-image: url(../images/icons/icon-digital.png);
+  }
+
+  &:hover {
+    background-color: $icon-color;
+  }
+
+  &:hover .icon--hover {
+    fill: $main-color;
+  }
+}
+
+// $icons: alarm, graph, computer, seo, house, digital;
+
+// @include generate-psuedo-icons(
+//   'icon-', 
+//   $icons, 
+//   '../images/icons/icon-', 
+//   'png'
+// );
+
+.icon--color {
+  fill: $icon-color;
+}
+
+.icon svg {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}

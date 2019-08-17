@@ -1,0 +1,78 @@
+.services {
+  padding-top: 130px;
+}
+
+.services__pre-title {
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: $secondary-color;
+  line-height: 1.2;
+}
+
+.services__title {
+  font-size: 30px;
+  font-family: $main-font-stack;
+  color: $secondary-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: solid 3px $icon-color;
+    padding-top: 44px;
+    margin: 0 auto;
+  }
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @extend %list;
+  padding-top: 65px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.services-list__item {
+  position: relative;
+  width: 383px;
+  padding-left: 83px;
+
+  &::before {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/icons/icon-alarm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.services-list__item-name {
+  font-size: 14px;
+  font-family: $main-font-stack;
+  font-weight: normal;
+  color: $secondary-color;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0;
+}
+
+.services-list__item-descrp {
+  font-size: 15px;
+  font-family: $secondary-font-stack;
+  color: $description-color;
+  line-height: 1.6;
+  text-align: left;
+}

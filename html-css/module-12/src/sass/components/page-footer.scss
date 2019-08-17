@@ -1,0 +1,54 @@
+.page-footer {
+  height: 60px;
+  @include center-flex('ver');
+  justify-content: space-between;
+}
+
+.page-footer__info {
+  font-size: 14px;
+  color: $secondary-color;
+  line-height: 1.2;
+}
+
+.page-footer__info span {
+  color: $icon-color;
+  cursor: pointer;
+}
+
+.page-footer__input {
+  display: flex;
+}
+
+.page-footer__input-email {
+  width: 230px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: $secondary-font-stack;
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  line-height: 1.6;
+  border: solid 1px rgb(229, 229, 229);
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.page-footer__btn {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: $secondary-bg-color;
+  padding-left: 33px;
+  padding-right: 33px;
+  font-size: 14px;
+  color: $main-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,29 @@
+@mixin center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+// @mixin generate-psuedo-icons($baseclass, $list, $path, $ext) {
+//   @each $icon in $list {
+//     .#{$baseclass}#{$icon}::before {
+//       background-image: url(#{$path}#{$icon}.#{$ext});
+//     }
+//   }
+// }
+
+// $icons: 2, 3, 4, 5, 6;
+
+// @include generate-psuedo-icons(
+//   'icon-', 
+//   $icons, 
+//   '../images/icons/icon-', 
+//   'png'
+// );
