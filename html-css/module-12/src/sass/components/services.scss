@@ -58,6 +58,28 @@
   }
 }
 
+.icon {
+  &-2::before {
+    background-image: url(../images/icons/icon-graph.png);
+  }
+
+  &-3::before {
+    background-image: url(../images/icons/icon-computer.png);
+  }
+
+  &-4::before {
+    background-image: url(../images/icons/icon-seo.png);
+  }
+
+  &-5::before {
+    background-image: url(../images/icons/icon-house.png);
+  }
+
+  &-6::before {
+    background-image: url(../images/icons/icon-digital.png);
+  }
+}
+
 .services-list__item-name {
   font-size: 14px;
   font-family: $main-font-stack;

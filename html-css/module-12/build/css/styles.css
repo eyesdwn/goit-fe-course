@@ -589,6 +589,26 @@ svg path {
   background-position: center;
 }
 
+.icon-2::before {
+  background-image: url(../images/icons/icon-graph.png);
+}
+
+.icon-3::before {
+  background-image: url(../images/icons/icon-computer.png);
+}
+
+.icon-4::before {
+  background-image: url(../images/icons/icon-seo.png);
+}
+
+.icon-5::before {
+  background-image: url(../images/icons/icon-house.png);
+}
+
+.icon-6::before {
+  background-image: url(../images/icons/icon-digital.png);
+}
+
 .services-list__item-name {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -618,26 +638,6 @@ svg path {
   opacity: 0;
   background-color: #fce38a;
   transition: background-color 200ms linear;
-}
-
-.icon-2::before {
-  background-image: url(../images/icons/icon-graph.png);
-}
-
-.icon-3::before {
-  background-image: url(../images/icons/icon-computer.png);
-}
-
-.icon-4::before {
-  background-image: url(../images/icons/icon-seo.png);
-}
-
-.icon-5::before {
-  background-image: url(../images/icons/icon-house.png);
-}
-
-.icon-6::before {
-  background-image: url(../images/icons/icon-digital.png);
 }
 
 .icon:hover {
