@@ -5,15 +5,16 @@ const numbers = [];
 let total = 0;
 
 do {
-    input = prompt('Enter a number');
+    input = prompt('Введите число');
 
     numbers.push(+input);
     console.log(numbers);
 }   while (input !== null);
 
- for(const number of numbers) {
-    if(input === null) {
-        total += number;
+if (numbers.length > 0) {
+    for (let i = 0; i < numbers.length; i++) {
+    total += numbers[i];
     }
-  console.log(`total is ${total}`)
- };
+    }
+    const message = `Общая сумма чисел равна ${total}`;
+    alert(message);
