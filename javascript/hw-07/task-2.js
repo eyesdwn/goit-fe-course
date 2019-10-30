@@ -10,8 +10,7 @@ const ingredients = [
 ];
 
 const listElement = document.querySelector('#ingredients');
-
-const tempList = document.createElement('div');
+const tempList = document.createDocumentFragment();
 
 ingredients.forEach(e => {
   const li = document.createElement('li');
@@ -19,4 +18,4 @@ ingredients.forEach(e => {
   tempList.appendChild(li);
 });
 
-listElement.insertAdjacentHTML('beforeend', tempList.innerHTML);
+listElement.append(tempList);
