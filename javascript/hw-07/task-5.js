@@ -7,7 +7,7 @@ const output = document.querySelector('#name-output');
 //   if(input.value !== '') {
 //     output.textContent = input.value;
 //   } else output.textContent = 'незнакомец';
-// }); 
+// });
 
 input.addEventListener('input', () => {
   output.textContent = input.value || 'незнакомец';

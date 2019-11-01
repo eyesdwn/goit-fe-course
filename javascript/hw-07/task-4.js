@@ -12,7 +12,7 @@
 //     valueElement.textContent = +valueElement.textContent + 1;
 //   } else if(action === "decrement") {
 //     valueElement.textContent = +valueElement.textContent - 1;
-//   }; 
+//   };
 // });
 
 const counter = document.querySelector('#counter');

@@ -27,9 +27,9 @@ const createGalleryItem = ({url, alt}) => {
   image.src = url;
   image.alt = alt;
   item.appendChild(image);
-  galleryElement.appendChild(item);
-}
+  return item;
+  }
 
-images.forEach((e) => {
-  createGalleryItem(e);
-});
+  const elements = images.map((e) => createGalleryItem(e));
+
+  galleryElement.append(...elements);
